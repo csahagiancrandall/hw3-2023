@@ -1,85 +1,132 @@
 body{
    /* Set line spacing */
+   line-height: 1;
+   margin: 0px 20px;
 }
 
 
 header, nav{
     /* Set padding and margin */
-
+    padding: 0px 20px;
+    margin: 20px 15px;
 }
+
 nav ul li{
     /* Set display, margin, padding, font-size, background-color */
-
+    font-size: 24px;
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 30px 25px;
+    background-color: #ffe9d1;
+    color: #000000;
 }
 
 nav a{
     /* Set text decoration*/
+    text-decoration: none;
 }
 
 a:visited{
     /* Set color */
-
+    color: black;
 }
 
 nav a.current{
     /* Set text decoration, transformation, and underline properties */
+    text-transform: uppercase;
+    text-decoration: underline wavy black 2px;
+    text-underline-offset: 5px;
 }
 
 
 h1{
    /*Set font and font size*/
-
+   font-family: Merriweather, Anton, "Times New Roman", Arial;
+   font-size: 48px;
 }
 
 h2{
     /*Set font, font size, and alignment*/
+   font-family: Anton, "Times New Roman", Arial;
+   font-size: 36px;
+   text-align: center;
 }
 
 h3{
     /*Set font size*/
-
+    font-size: 36px;
 }
 
 h1, h2, h3{
     /*Set margin */
-
+    margin-top: 20px;
 }
 .grid{
     /*Set width, margin, border properties, background color, and grid properties */
+/*    
+    It should be 90% of the body and centered.
+    It should have a border radius
+    It should be a grid with three columns of 30% 
+    Space them horizontally to match mine.
+    Leave 10px between each row
+*/
+    display: grid;
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 20px;
+    grid-template-columns: repeat(3, 30%);
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+    justify-content: space-between;
+    background-color: #778898;
 }
 
 .grid div{
     /* Set border properties, padding, and background color */
-
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #F8F8F8;
 }
 
 .grid img{
     /* Set width, margin, and display */
+    width: 90%;
+    margin: 10px auto;
+    display: block;
 }
 
 
 .grid div:nth-child(3n+1)  {
-    /* Set box shadow */
+    /* Set box shadow #a9a9a9 */
+    box-shadow: 10px 0px 5px #a9a9a9;
     }
 
 .grid div:nth-child(3n)  {
     /* Set box shadow */ 
+    box-shadow: -10px 0px 5px #a9a9a9;
 }
 
 .grid div:nth-child(3n+2)  {
      /* Set box shadow */
+    box-shadow: 10px 0px 5px #a9a9a9, -10px 0px 5px #a9a9a9;
 }
     
 
 p + p {
      /* Set indentation */
+     text-indent: 20px;
   }
   
 p{
      /* Set margin */
+     margin: 10px 0px 0px;
 }
 
 
 .grid ul li{
     /* Set margin, line-spacing, list styling  */
+   line-height: 1;
+   margin: 0px 0px 10px 30px;
+    list-style-image: url("../images/sketchbook.png");
 }
